@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#header{
+  width: 100%;
+  height: 85px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.navbar{
+  width: 95%;
+  height: 85px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+h2{
+  font-size: 2.5em;
+  line-height: 85px;
+  font-family: 'Acme', sans-serif;
+  color: rgba(0, 255, 0, 0.9);
+}
+.navbar ul{
+  display: flex;
+}
+.navbar ul li{
+  list-style: none;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: rgba(0, 255, 0, 0.9);
+  font-size: 1em;
+  line-height: 85px;
+  margin: 0 20px;
+  font-weight: 500;
+}
+.navbar ul li a:hover{
+  color: rgba(0, 255, 0, 0.6);
+}
+
+@media screen and (max-width: 700px){
+  h2{
+    width: 100%;
+    font-size: 1.9em;
+    text-align: center;
+  }
+  .navbar ul{
+    display: none;
+  }
+}
+
+/*** pakage cards styles ***/
+.pakage-headline{
+  padding: 30px 0 10px 0;
+}
+.pakage-headline > h1{
+  width: 40%;
+  border-image: repeating-linear-gradient(45deg, yellow 0px, yellow 5px, black 5px, black 10px) 10 / 10px;
+  margin: auto;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 2em;
+}
